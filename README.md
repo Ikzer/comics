@@ -1,5 +1,5 @@
 # Angular QuickStart Source
-[![Build Status][travis-badge]][travis-badge-url]
+[![Build Status](https://travis-ci.org/Ikzer/comics.svg?branch=master)](https://travis-ci.org/Ikzer/comics)
 
 This repository holds the TypeScript source code of the [angular.io quickstart](https://angular.io/docs/ts/latest/quickstart.html),
 the foundation for most of the documentation samples and potentially a good starting point for your application.
@@ -182,7 +182,4 @@ A custom reporter (see `protractor.config.js`) generates a  `./_test-output/prot
 which is easier to read; this file is excluded from source control.
 
 Shut it down manually with `Ctrl-C`.
-
-[travis-badge]: https://travis-ci.org/angular/quickstart.svg?branch=master
-[travis-badge-url]: https://travis-ci.org/angular/quickstart
 =======
