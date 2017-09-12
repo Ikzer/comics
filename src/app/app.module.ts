@@ -6,15 +6,19 @@ import { HttpModule }    from '@angular/http';
 import { AppRoutingModule } from './app-routing.module';
 
 // Imports for loading & configuring the in-memory web api
-import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
-import { InMemoryDataService }  from './in-memory-data.service';
+import { InMemoryWebApiModule }   from 'angular-in-memory-web-api';
+import { InMemoryDataService }    from './in-memory-data.service';
 
-import { AppComponent }         from './app.component';
-import { DashboardComponent }   from './dashboard.component';
-import { HeroesComponent }      from './heroes.component';
-import { HeroDetailComponent }  from './hero-detail.component';
-import { HeroService }          from './hero.service';
-import { HeroSearchComponent }  from './hero-search.component';
+import { AppComponent }           from './app.component';
+import { DashboardComponent }     from './dashboard.component';
+import { HeroesComponent }        from './heroes.component';
+import { HeroDetailComponent }    from './hero-detail.component';
+import { HeroService }            from './hero.service';
+import { HeroSearchComponent }    from './hero-search.component';
+import { ComicsComponent }        from './components/comics.component';
+import { ComicDetailComponent }   from './components/comic-detail.component';
+import { ComicService }           from './services/comic.service';
+//import { ComicSearchComponent }    from './components/comic-search.component';
 
 @NgModule({
   imports: [
@@ -29,9 +33,12 @@ import { HeroSearchComponent }  from './hero-search.component';
     DashboardComponent,
     HeroDetailComponent,
     HeroesComponent,
-    HeroSearchComponent
+    HeroSearchComponent,
+    ComicDetailComponent,
+    ComicsComponent,
+    //ComicSearchComponent,
   ],
-  providers: [ HeroService ],
+  providers: [ HeroService, ComicService ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }

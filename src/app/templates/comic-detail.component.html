@@ -1,0 +1,23 @@
+<!--
+    id: number;
+    publisher: string;
+    series: string;
+    number: string;
+    condition: string;
+    price: number;
+    status: boolean;
+    quantity: number;
+    date: string;
+    destination: string;
+    cover: string; -->
+<div *ngIf="comic">
+  <h2>{{comic.series}} #{{comic.number}} details!</h2>
+  <div>
+    <label>id: </label>{{comic.id}}</div>
+  <div>
+    <label>series: </label>
+    <input [(ngModel)]="comic.series" placeholder="Series" />
+   </div>
+  <button (click)="goBack()">Back</button>
+  <button (click)="save()">Save</button>
+</div>

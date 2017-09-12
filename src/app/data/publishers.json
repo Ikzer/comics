@@ -1,0 +1,8 @@
+/* 
+ id: 0,
+ publisher: '',
+ */
+[
+  { id: 1, publisher: 'Marvel' },
+  { id: 2, publisher: 'DC'}
+]

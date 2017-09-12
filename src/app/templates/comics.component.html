@@ -1,0 +1,22 @@
+<h2>Comics</h2>
+<div>
+  <label>Comic series:</label> <input #comicSeries />
+  <button (click)="add(comicSeries.value); comicSeries.value=''">
+    Add
+  </button>
+</div>
+<ul class="heroes">
+  <li *ngFor="let comic of comimcs" (click)="onSelect(comic)"
+      [class.selected]="comic === selectedHero">
+    <span class="badge">{{comic.id}}</span>
+    <span>{{comic.series}}</span>
+    <button class="delete"
+      (click)="delete(comic); $event.stopPropagation()">x</button>
+  </li>
+</ul>
+<div *ngIf="selectedComic">
+  <h2>
+    {{selectedComic.series | uppercase}} is my comic
+  </h2>
+  <button (click)="gotoDetail()">View Details</button>
+</div>

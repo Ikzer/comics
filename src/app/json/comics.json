@@ -1,0 +1,15 @@
+[
+  {
+    id: 1
+    publisher: 1,
+    series: 1,
+    number: '1',
+    condition: 'Fine',
+    price: 5.00,
+    status: true,
+    quantity: 1,
+    date: '11/09/2017',
+    destination: 'Colección Personal',
+    cover: '',
+  },
+]

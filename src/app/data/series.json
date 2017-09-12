@@ -1,0 +1,10 @@
+/* 
+ id: 0,
+ publisher: 1,
+ series: '',
+ year: 2015,
+ */
+[
+  { id: 1, publisher: 1, series: 'Star Wars', year: 2015 },
+  { id: 2, publisher: 1, series: 'Star Wars: Darth Vader', year: 2015 },
+]
