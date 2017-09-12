@@ -11,6 +11,7 @@ import { ComicService } from '../services/comic.service';
   templateUrl: '../../templates/comic-detail.component.html',
   styleUrls: [ '../../styles/comic-detail.component.css' ]
 })
+
 export class ComicDetailComponent implements OnInit {
   comic: Comic;
 
